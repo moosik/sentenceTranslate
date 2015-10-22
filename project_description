@@ -1,0 +1,38 @@
+I want to create a program that will select a given number of sentences from 
+a file or a database. It will then display one sentence at a time for me to 
+translate to Spanish. I also want to set for how many seconds the sentence will
+be shown.
+
+Then I translate the sentence, as soon as I do it I can press a button
+(for example "Space"). 
+
+If I press it before the time is up it will then show me
+the translation of the sentence and will ask me whether my translation was correct.
+I can then press y (correct) or n (incorrect). If I am correct, my score will increase,
+if I am incorrect, my score will stay the same. Alternatively I can type it,
+it will record and show what I wrote and what translation I have on file
+
+If I don't press a buttom before the time is up, it will show me the translation
+and will not increase my score (because I wasn't able to translate it fast enough).
+
+At the end it will show me the score: number of correctly translated sentences
+vs the total number of sentences presented. I can also possibly show the list
+of all incorrect sentences.
+
+As a prototype I would like to make a simple R script, but eventually I would like
+to make a shiny app.
+
+Question: how should I store the sentences? File? Database? These sentences
+are based on my learning of Spanish in duolongo, it might be good to label them 
+based on the levels in duolongo
+
+So far: labeling the sentences based on the number of lesson: in duolingo these
+are the grouped lessons with an image (there could be multiple lessons within
+a group). So for example, for the all lessons before posessions, I label the
+sentences with 6 (meaning that these sentences come from lessons 1-6). 
+Phrases learned from Fluencia I labeled them with 0. When I add posessions these
+sentences will be labeled 7 (which means they have words from lessons 1 to 7)
+add possession
+
+Also, timing could be an option. Whether I want to the testing to be in the timed
+mode or not. The first prototype should be created without timing

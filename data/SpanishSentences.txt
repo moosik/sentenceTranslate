@@ -1,122 +1,129 @@
-They speak Russian
-We don't speak English
-Vy speak Spanish
-She speaks Spanish
-You speak Russian
-You don't speak English
-He doesn't speak English
-They don't Speak English
-I write letters
-You write books
-You write a book
-You write a newspaper
-He writes words
-They write words
-She writes a letter
-Hello! How are you
-Good morning! How are you?
-Good morning, I am fine
-Bye! See you later
-How are you? I am not good
-I am sorry
-Excuse me, how are you
-Good evening! How are you?
-Hello, My name is Michael
-Hello, nice to meet you!
-A boy eats an apple
-The children eat apples
-The woman eats the apple
-The men eat bread
-A girl eats cheese
-I cook a chicken 
-They cook chickens
-They cook meat
-They cook roasted meat
-They eat roasted meat
-She cooks chicken
-He cooks dinner
-Do you cook dinner?
-Do you eat lunch?
-Do you eat sandwiches?
-She eats sandwiches
-The girl eats sandwiches
-A man eats sandwiches
-You guys eat lunch
-You guys eat eggs
-They eat fresh cheese
-I eat strawberries
-I drink juice
-You drink milk
-She drinks water
-He drinks wine
-Does he eat dinner?
-Does she eat lunch?
-Do you guys eat breakfast?
-Excuse me, do you eat meat?
-Excuse me, do you eat fish?
-A girl eats fish
-Fish is not an animal
-A duck is not an animal
-A duck is a bird
-Birds are not animals
-Good morning, do you eat elefants?
-Do elefants read books?
-Lion is an animal
-A bear is not a bird
-A crab is not an animal
-A spider doesn't read books
-Hello, it is a horse
-Horse is an animal
-Horse is not a fish
-Horse eat apples
-Horse drinks water
-A woman drinks juice
-You drink juice
-She drinks milk
-They drink water
-I don't eat lemons
-You don't eat meat
-I read a menu
-You guys read a menu
-They read a menu
-A man writes a menu
-Milk is not water
-Water is not milk
-Monkey drinks milk
-Monkeys eat oranges
-Monkeys eat apples
-Cats eat mice
-Mice eat spiders
-We eat crabs
-Spiders are not animals
-Lions eat rabbits
-Bears eat pigs
-A person drinks wine
-I eat pasta
-Do they eat pasta?
-Do you eat sauce?
-Do you eat salt?
-They eat potatoes
-Potatoes are not vegetables
-Meat is not vegetable
-She is vegetarian
-He is vegetarian, he doesn't eat meat
-Pigs eat rice
-Cats eat meat
-Dogs eat rabbits
-She eats sandwich
-Do you eat soup?
-Do they eat strawberries?
-Do we eat sugar?
-Do we drink tea?
-Do they drink wine?
-Ducks are birds
-They cook fresh cheese
-I eat tomato
-She eats tomatoes
-Womens eat turtles
-They are vegetarian
-We apologize
-No, it is not him
-No, it is not you
-No, it is not them
+They speak Russian;Nosotros hablamos ruso;6
+We don't speak English;Nosotros no hablamos inglés;6
+You (respective, singular) speak Spanish;Usted habla español;6
+She speaks Spanish;Ella habla español;6
+You speak Russian;Tú hablas ruso;6
+You don't speak English;Tú no hablas inglés;6
+He doesn't speak English;Él no habla inglés;6
+They don't Speak English;Ellos no hablan inglés;6
+I write letters;Yo escribo cartas;6
+You write books;Tú escribes libros;6
+You write a book;Tú escribes un libro;6
+You write a newspaper;Tú escribes un diario;6
+He writes words;Él escribe palabras;6
+They write words;Ellos escriben palabras;6
+She writes a letter;Ella escribe una carta;6
+Hello!;Hola!;6
+Good morning!;¡Buenos días!;6
+Good morning, I am fine;Buenos días, estoy bien;0
+Bye!;¡Adiós!;6 
+See you later;¡Hasta luego!;0
+How are you? I am not good;¿Comó estás? Estoy mal;0
+I am sorry;Lo siento;6
+Excuse me;Disculpe;6
+Good evening!;¡Buenas noches!;6
+How are you?;¿Comó estás?;0
+Hello, My name is Michael;Hola, mi llamo Miguel;0
+Hello, nice to meet you!;Hola, mucho gusto;6
+A boy eats an apple;Un niño come una manzana;6
+The children eat apples;Los niños comen manzanas;6
+The woman eats an orange;La mujer come una naranja;6
+The men eat bread;El hombre come pan;6
+A girl eats the fresh cheese;Una niña come el queso fresco;6
+I cook a chicken;Yo cocino un pollo;6
+They (women) cook chickens;Ellas cocinan pollos;6
+They (men) cook meat;Ellos cocinan carne;6
+You guys cook roasted meat;Ustedes cocinan carne asada;6
+They (mixed) eat roasted meat;Ellos comen carne asada;6
+She cooks fish;Ella cocina pescado;6
+The man cooks vegetables;El hombre cocina vegetales;6
+We (mixed) cook dinner;Nosotros cocinamos la cena;6
+Do you cook dinner?;¿Tú cocinas la cena?;6
+Do you eat lunch?;¿Tú comes el almuerzo?;6
+Do you eat sandwiches?;¿Tú comes emparedados?;6
+She eats sandwiches;Ella come emparedados;6
+The girl eats sandwiches;La niña come emparedados;6
+They eats sandwiches;Ellos comen emparedados;6
+You guys eat lunch;Ustedes comen la almuerzo;6
+You guys eat eggs;Ustedes comen huevos;6
+They eat fresh cheese;Ellos comen queso fresco;6
+I eat strawberries;Yo como fresas;6
+I drink the juice;Yo bebo el jugo;6
+You drink the milk;Tú bebes la leche;6
+She drinks water;Ella bebe agua;6
+He drinks the wine;Él bebe el vino;6
+Does he eat dinner?;¿Él come la cena?;6
+Does she eat lunch?;¿Ella come la almuerzo?;6
+Do you guys eat breakfast?;Ustedes comen el desayuno?;6
+Excuse me, do you eat meat?;¿Disculpe, tú comes carne?;6
+Are you a vegetarian?;¿Tú eres vegetariano?;6
+They are vegetarian;Ellos son vegetarianos;6
+Excuse me, do you eat fish?;¿Disculpe, tú comes pescado?;6
+A girl eats fish;Una niña come pescado;6
+Fish is not an animal;Pescado no es un animal;6
+A duck is not an animal;Un pato no es un animal;6
+A duck is a bird;Un pato es un pájaro;6
+Birds are not animals; Pájaros no es animales;6
+Good morning, do you eat elefants?;¿Buenos días, tú comes elefantes?;6
+Do elefants read books?;¿Elefantes leen libros?;6
+Lion is an animal;León es un animal;6
+A bear is not a bird;Un oso no es un pájaro;6
+A crab is not an animal;Un cangrejo no es un animal;6
+A spider doesn't read books;Una araña no lee libros;6
+Hello, it is a horse;Hola, es un caballo;6
+Horse is an animal;Caballo es an animal;6
+Horse is not a fish;Caballo no es un pescado;6
+Dogs eat apples;Perros comen manzanas;6
+Bear drinks water;Oso bebe agua;6
+A woman drinks juice;Una mujer bebe jugo;6
+You drink juice;Tú bebes jugo;6
+She drinks milk;Ella bebe leche;6
+They drink water;Ellos beben agua;6
+I don't eat lemons;Yo no bebo limónes;6
+You don't eat meat;Tú no comes carne;6
+I read a menu;Yo leo un menú;6
+You guys read a menu;Ustedes leen un menú;6
+We read a letter;Nosotros leemos una carta;6
+A man writes a menu;Un hombre esribe un menú;6
+Milk is not water;Leche no es agua;6
+Wine is not milk;Vino no es leche;6
+A monkey drinks milk;Un mono bebe leche;6
+The monkeys eat oranges;Los monos comen naranjas;6
+The bulls eat apples;Los toros comen manzanas;6
+Cats eat mice;Gatos comen ratónes;6
+Mice eat spiders;Ratónes comen arañas;6
+We eat crabs;Nosotros comemos cangrejos;6
+Spiders are not animals;Arañas no son animales;6
+Lions eat rabbits;Leónes comen conejos;6
+Bears eat pigs;Osos comen cerdos;6
+A person drinks wine;Una persona bebe vino;6
+I eat pasta;Yo como pasta;6
+You eat soup;Tú comes sopa;6
+Do they eat pasta?;¿Ellos comen pasta?;6
+Do you eat sauce?;¿Tú comes salsa?;6
+Do you eat salt?;¿Tú comes sal?;6
+They eat potatoes;Ellos comen papas;6
+Potatoes are not vegetables;Papas no son vegetales;6
+Meat is not vegetable;Carne no es vegetale;6
+She is vegetarian;Ella es vegetariano;6
+I eat food;Yo como comida;6
+He is vegetarian, he doesn't eat meat;Él es vegetariano, él no come carne;6
+Pigs eat rice;Cerdos comen arroz;6
+Cats cook meat;Gatos cocinan carne;6
+Dogs eat rabbits;Perros comen conejos;6
+She eats sandwich;Ella come emparedado;6
+Do you eat soup?;¿Tú comes sopa?;6
+Do they eat strawberries?;¿Ellos comen fresas?;6
+Do we eat sugar?;¿Nosotros comemos azúcar?;6
+Do we drink tea?;¿Nosotros bebemos té?;6
+Do they drink wine?;¿Ellos beben vino?;6
+Ducks are birds;Patos son pájaros;6
+They cook fresh cheese;Ellos cocinan queso fresco;6
+I eat tomato;Yo como tomate;6
+She eats tomatoes;Ella come tomatoes;6
+Womens eat turtles;Mujeres comen tortugas;6
+They are vegetarian;Ellos son vegetariano;6
+We apologize;Disculpamos;6
+No, it is not him;No, no es él;6
+No, it is not you;No, no eres tú;6
+No, it is not them;No, no son ellos;6
