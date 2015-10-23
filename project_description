@@ -36,3 +36,10 @@ add possession
 
 Also, timing could be an option. Whether I want to the testing to be in the timed
 mode or not. The first prototype should be created without timing
+
+
+When I end up creating a shiny app I should have check boxes for which I want
+to select the section. And if I select 1:7 then all the 1:6 will be also automatically
+selected. Similarly, if I select all then all other will be also automatically 
+selected
+If

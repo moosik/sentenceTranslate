@@ -4,15 +4,39 @@ data<- readLines("./data/SpanishSentences.txt")
 temp <- strsplit(data, split = ";")
 english <- sapply(temp, "[", 1)
 spanish <- sapply(temp, "[", 2)
-lv <- sapply(temp, "[", 3)
+lv <- as.numeric(sapply(temp, "[", 3))
 data.df <- data.frame(english, spanish, level = lv, stringsAsFactors = FALSE)
 
 # Version 1: select n random sentences, go through them,
 # present with the english version, read my translation, present both results,
 # ask whether I was correct or not, count the number of correct answers, present
 # with the results
+# 
+# Version 2: adding selection of the sections to be tested
+
+
+# Function to aks the user about the sections to be tested:
+sectionChoice <- function(){
+  # Present with the choice of sections
+  cat("Select which Duolingo lessons you want to practice:\n")
+  cat("Lessons 1 through 6: basics 1 & 2, phrases, food, animals, plurals: enter 6\n")
+  cat("Lessons 1 through 7: all the above and posession: enter 7\n")
+  cat("Lessons 1 through 8: all the above and clothing: enter 8\n")
+  cat("Phrases from Fluencia: enter 1\n")
+  cat("All above: enter 2\n")
+  section.select <- readline(prompt =  "Make your selection: ")
+  sec.selected <- suppressWarnings(as.numeric(section.select))
+  # Need to make a decision what to do if the choice is wrong (generates NA,
+  # for example in the case if not a numeric value is entered) or the numeric
+  # value entered is not within the range of the sections present in the data.
+  # For now assume that everything is correct
+  return(sec.selected)
+}
+
 
 transTest <- function(data, howmany){
+  # Ask the user about which section needs to be tested:
+  
   # Indices for the rows to select
   select.rows <- sample(1:nrow(data), howmany)
   # Select the data
@@ -50,3 +74,6 @@ transTest <- function(data, howmany){
     j <- j + 1
   }
 }
+
+
+
