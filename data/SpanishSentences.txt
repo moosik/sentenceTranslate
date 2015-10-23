@@ -104,7 +104,7 @@ Do you eat sauce?;¿Tú comes salsa?;6
 Do you eat salt?;¿Tú comes sal?;6
 They eat potatoes;Ellos comen papas;6
 Potatoes are not vegetables;Papas no son vegetales;6
-Meat is not vegetable;Carne no es vegetale;6
+Meat is not vegetable;Carne no es vegetal;6
 She is vegetarian;Ella es vegetariano;6
 I eat food;Yo como comida;6
 He is vegetarian, he doesn't eat meat;Él es vegetariano, él no come carne;6
