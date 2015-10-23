@@ -127,3 +127,31 @@ We apologize;Disculpamos;6
 No, it is not him;No, no es él;6
 No, it is not you;No, no eres tú;6
 No, it is not them;No, no son ellos;6
+Your beer;Tu cerveza;7
+Your wine;Tu vino;7
+The man is yours;El hombre es tuyo;7
+The woman is yours;La mujer es tuya;7
+A boy is his;Un niño es suyo;7
+A girl is his;Una niña es suyo;7
+Her dress;Su vestido;8
+Her shirt;Su camisa;8
+Their coat;Su abrigo;8
+Their clothes;Su ropa;8
+Their oranges;Sus naranjas;8
+Your guys’s pants;Sus pantalónes;8
+Your guys’ animals;Sus animales;8
+My cat is a pig;Mí gato es un cerdo;7
+Our cats are pigs;Nuestro gatos son cerdos;7
+Their horses don’t eat rice;Sus caballos no comen arroz;7
+Your dogs don’t eat bread;Tus perros no comen pan;7
+His cats don’t eat roasted meat;Sus gatos no comen carne asada;7
+Your cats don’t eat mice;Tus gatos no comen ratónes;7
+My hats;Mís sombreros;8
+The hat is mine;El sombrero es mío;8
+The dresses are yours;Los vestidos son tuyos;8
+The crabs are hers;Los cangrejos son suyos;7
+The tomatoes are ours;Los tomatos son nuestros;7
+The apple is ours;La manzana es nuestra;7
+My dogs;Mis perros;7
+The cats are mine;Los gatos son míos;7
+
