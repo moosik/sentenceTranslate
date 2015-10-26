@@ -26,10 +26,7 @@ sectionChoice <- function(){
   cat("All above: enter 2\n")
   section.select <- readline(prompt =  "Make your selection: ")
   sec.selected <- suppressWarnings(as.numeric(section.select))
-  # Need to make a decision what to do if the choice is wrong (generates NA,
-  # for example in the case if not a numeric value is entered) or the numeric
-  # value entered is not within the range of the sections present in the data.
-  # For now assume that everything is correct
+
   return(sec.selected)
 }
 
