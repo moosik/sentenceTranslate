@@ -26,14 +26,38 @@ sectionChoice <- function(){
   cat("All above: enter 2\n")
   section.select <- readline(prompt =  "Make your selection: ")
   sec.selected <- suppressWarnings(as.numeric(section.select))
-
   return(sec.selected)
+}
+
+sentenceAvailabilityForTest <- function(data, howmany){
+  # This function figures out whether the number of requested sentences
+  # to be tested is less or more than the number of available sentences
+  # in a section. 
+  # data = sentences from a section
+  # howmany = how many sentences to test
+  # 
+  # If the number of requested sentences larger than the number of available
+  # sentences just reshuffle the rows and present them to the user
+  if(nrow(data) >= howmany){
+    to.test.data <- data[sample.int(1:nrow(data)), ]
+    return(to.test.data)
+  }
+  # If the number of requested sentences is smaller than the number of 
+  # available sentences select the number of requested sentences at
+  # random
+  else{
+    test.ind <- sample(1:nrow(data), howmany)
+    to.test.data <- data[test.ind, ]
+    return(to.test.data)
+  }
 }
 
 
 transTest <- function(data, howmany){
-  # Ask the user about which section needs to be tested:
-  
+  user.choice <- sectionChoice()
+  # Create a subset of data from the chosen section:
+  data.section <- data[data$level == user.choice, ]
+  cat(paste("This section has", nrow(data.section), "sentences\n", sep = " "))
   # Indices for the rows to select
   select.rows <- sample(1:nrow(data), howmany)
   # Select the data
