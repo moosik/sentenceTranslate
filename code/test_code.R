@@ -29,7 +29,7 @@ sectionChoice <- function(){
   return(sec.selected)
 }
 
-sentenceAvailabilityForTest <- function(data, howmany){
+sentenceAvailabilityForTest <- function(data, tests){
   # This function figures out whether the number of requested sentences
   # to be tested is less or more than the number of available sentences
   # in a section. 
@@ -38,7 +38,7 @@ sentenceAvailabilityForTest <- function(data, howmany){
   # 
   # If the number of requested sentences larger than the number of available
   # sentences just reshuffle the rows and present them to the user
-  if(nrow(data) >= howmany){
+  if(nrow(data) >= tests){
     to.test.data <- data[sample.int(1:nrow(data)), ]
     return(to.test.data)
   }
@@ -46,7 +46,7 @@ sentenceAvailabilityForTest <- function(data, howmany){
   # available sentences select the number of requested sentences at
   # random
   else{
-    test.ind <- sample(1:nrow(data), howmany)
+    test.ind <- sample(1:nrow(data), tests)
     to.test.data <- data[test.ind, ]
     return(to.test.data)
   }
@@ -57,15 +57,12 @@ transTest <- function(data, howmany){
   user.choice <- sectionChoice()
   # Create a subset of data from the chosen section:
   data.section <- data[data$level == user.choice, ]
+  # Select sentences from a section based on how many are requested for testing
+  tobe.tested <- sentenceAvailabilityForTest(data.section, tests = howmany)
   cat(paste("This section has", nrow(data.section), "sentences\n", sep = " "))
-  # Indices for the rows to select
-  select.rows <- sample(1:nrow(data), howmany)
-  # Select the data
-  tobe.tested <- data[select.rows, ]
+  cat(paste("We will test", nrow(tobe.teste), "sentences\n", sep = " "))
   # List to store the sentences which weren't translated correctly
   tobe.studied <- list()
-  cat(paste("Will test", howmany, "sentences", sep = " "))
-  cat("\n")
   score <- 0
   cat(paste("Initial score is", score, sep = " "))
   cat("\n")
@@ -73,8 +70,7 @@ transTest <- function(data, howmany){
   for(i in seq_len(nrow(tobe.tested))){
     # wait for the input
     answer <- readline(prompt =  paste("Sentence: ", tobe.tested[i,1], ". Your translation: ", sep = ""))
-    cat(paste("You entered:", answer, sep = " "))
-    cat("\n")
+    cat(paste("You entered: ", answer, "\n", sep = ""))
     cat(paste("The correct translation:", tobe.tested[i,2], sep = " "))
     count.ch <- readline(prompt = "Were you correct? Enter y(yes) or n(no) ")
     res <- trimws(as.character(count.ch), which = "both")
