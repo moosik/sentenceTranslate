@@ -38,8 +38,10 @@ sentenceAvailabilityForTest <- function(data, tests){
   # 
   # If the number of requested sentences larger than the number of available
   # sentences just reshuffle the rows and present them to the user
-  if(nrow(data) >= tests){
-    to.test.data <- data[sample.int(1:nrow(data)), ]
+  if(tests >= nrow(data)){
+    tests <- nrow(data)
+    test.ind <- sample(1:nrow(data), tests)
+    to.test.data <- data[test.ind, ]
     return(to.test.data)
   }
   # If the number of requested sentences is smaller than the number of 
