@@ -60,7 +60,7 @@ transTest <- function(data, howmany){
   # Select sentences from a section based on how many are requested for testing
   tobe.tested <- sentenceAvailabilityForTest(data.section, tests = howmany)
   cat(paste("This section has", nrow(data.section), "sentences\n", sep = " "))
-  cat(paste("We will test", nrow(tobe.teste), "sentences\n", sep = " "))
+  cat(paste("We will test", nrow(tobe.tested), "sentences\n", sep = " "))
   # List to store the sentences which weren't translated correctly
   tobe.studied <- list()
   score <- 0

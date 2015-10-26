@@ -1,4 +1,4 @@
-They speak Russian;Nosotros hablamos ruso;6
+They speak Russian;Ellos hablamos ruso;6
 We don't speak English;Nosotros no hablamos inglés;6
 You (respective, singular) speak Spanish;Usted habla español;6
 She speaks Spanish;Ella habla español;6
