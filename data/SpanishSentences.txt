@@ -154,4 +154,16 @@ The tomatoes are ours;Los tomatos son nuestros;7
 The apple is ours;La manzana es nuestra;7
 My dogs;Mis perros;7
 The cats are mine;Los gatos son míos;7
-
+The coats are mine;Los abrigos son míos;8
+Her skirt;Su falda;8
+His belt;Su cinturón;8
+The suit is ours;El traje es nuestro;8
+The dresses are ours;Los vestidos son nuestros;8
+Their sweaters;Sus suéteres;8
+Your boots;Tus botas;8
+My pants;Mis pantalones;8
+A hat is yours;Un sombrero es tuyo;8
+A shirt is yours;Una camisa es tuya;8
+The shoes are ours;Los zapatos son nuestros;8
+The socks are hers;Los calcetines son suyos;8
+The tie is mine;El corbato es mío;8
