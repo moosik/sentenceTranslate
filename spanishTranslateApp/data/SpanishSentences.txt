@@ -1,0 +1,180 @@
+They speak Russian;Ellos hablamos ruso;6
+We don't speak English;Nosotros no hablamos inglés;6
+You (respective, singular) speak Spanish;Usted habla español;6
+She speaks Spanish;Ella habla español;6
+You speak Russian;Tú hablas ruso;6
+You don't speak English;Tú no hablas inglés;6
+He doesn't speak English;Él no habla inglés;6
+They don't Speak English;Ellos no hablan inglés;6
+I write letters;Yo escribo cartas;6
+You write books;Tú escribes libros;6
+You write a book;Tú escribes un libro;6
+You write a newspaper;Tú escribes un diario;6
+He writes words;Él escribe palabras;6
+They write words;Ellos escriben palabras;6
+She writes a letter;Ella escribe una carta;6
+Hello!;Hola!;6
+Good morning!;¡Buenos días!;6
+Good morning, I am fine;Buenos días, estoy bien;0
+Bye!;¡Adiós!;6 
+See you later;¡Hasta luego!;0
+How are you? I am not good;¿Comó estás? Estoy mal;0
+I am sorry;Lo siento;6
+Excuse me;Disculpe;6
+Good evening!;¡Buenas noches!;6
+How are you?;¿Comó estás?;0
+Hello, My name is Michael;Hola, mi llamo Miguel;0
+Hello, nice to meet you!;Hola, mucho gusto;6
+A boy eats an apple;Un niño come una manzana;6
+The children eat apples;Los niños comen manzanas;6
+The woman eats an orange;La mujer come una naranja;6
+The men eat bread;El hombre come pan;6
+A girl eats the fresh cheese;Una niña come el queso fresco;6
+I cook a chicken;Yo cocino un pollo;6
+They (women) cook chickens;Ellas cocinan pollos;6
+They (men) cook meat;Ellos cocinan carne;6
+You guys cook roasted meat;Ustedes cocinan carne asada;6
+They (mixed) eat roasted meat;Ellos comen carne asada;6
+She cooks fish;Ella cocina pescado;6
+The man cooks vegetables;El hombre cocina vegetales;6
+We (mixed) cook dinner;Nosotros cocinamos la cena;6
+Do you cook dinner?;¿Tú cocinas la cena?;6
+Do you eat lunch?;¿Tú comes el almuerzo?;6
+Do you eat sandwiches?;¿Tú comes emparedados?;6
+She eats sandwiches;Ella come emparedados;6
+The girl eats sandwiches;La niña come emparedados;6
+They eats sandwiches;Ellos comen emparedados;6
+You guys eat lunch;Ustedes comen la almuerzo;6
+You guys eat eggs;Ustedes comen huevos;6
+They eat fresh cheese;Ellos comen queso fresco;6
+I eat strawberries;Yo como fresas;6
+I drink the juice;Yo bebo el jugo;6
+You drink the milk;Tú bebes la leche;6
+She drinks water;Ella bebe agua;6
+He drinks the wine;Él bebe el vino;6
+Does he eat dinner?;¿Él come la cena?;6
+Does she eat lunch?;¿Ella come la almuerzo?;6
+Do you guys eat breakfast?;Ustedes comen el desayuno?;6
+Excuse me, do you eat meat?;¿Disculpe, tú comes carne?;6
+Are you a vegetarian?;¿Tú eres vegetariano?;6
+They are vegetarian;Ellos son vegetarianos;6
+Excuse me, do you eat fish?;¿Disculpe, tú comes pescado?;6
+A girl eats fish;Una niña come pescado;6
+Fish is not an animal;Pescado no es un animal;6
+A duck is not an animal;Un pato no es un animal;6
+A duck is a bird;Un pato es un pájaro;6
+Birds are not animals; Pájaros no es animales;6
+Good morning, do you eat elefants?;¿Buenos días, tú comes elefantes?;6
+Do elefants read books?;¿Elefantes leen libros?;6
+Lion is an animal;León es un animal;6
+A bear is not a bird;Un oso no es un pájaro;6
+A crab is not an animal;Un cangrejo no es un animal;6
+A spider doesn't read books;Una araña no lee libros;6
+Hello, it is a horse;Hola, es un caballo;6
+Horse is an animal;Caballo es an animal;6
+Horse is not a fish;Caballo no es un pescado;6
+Dogs eat apples;Perros comen manzanas;6
+Bear drinks water;Oso bebe agua;6
+A woman drinks juice;Una mujer bebe jugo;6
+You drink juice;Tú bebes jugo;6
+She drinks milk;Ella bebe leche;6
+They drink water;Ellos beben agua;6
+I don't eat lemons;Yo no bebo limónes;6
+You don't eat meat;Tú no comes carne;6
+I read a menu;Yo leo un menú;6
+You guys read a menu;Ustedes leen un menú;6
+We read a letter;Nosotros leemos una carta;6
+A man writes a menu;Un hombre esribe un menú;6
+Milk is not water;Leche no es agua;6
+Wine is not milk;Vino no es leche;6
+A monkey drinks milk;Un mono bebe leche;6
+The monkeys eat oranges;Los monos comen naranjas;6
+The bulls eat apples;Los toros comen manzanas;6
+Cats eat mice;Gatos comen ratónes;6
+Mice eat spiders;Ratónes comen arañas;6
+We eat crabs;Nosotros comemos cangrejos;6
+Spiders are not animals;Arañas no son animales;6
+Lions eat rabbits;Leónes comen conejos;6
+Bears eat pigs;Osos comen cerdos;6
+A person drinks wine;Una persona bebe vino;6
+I eat pasta;Yo como pasta;6
+You eat soup;Tú comes sopa;6
+Do they eat pasta?;¿Ellos comen pasta?;6
+Do you eat sauce?;¿Tú comes salsa?;6
+Do you eat salt?;¿Tú comes sal?;6
+They eat potatoes;Ellos comen papas;6
+Potatoes are not vegetables;Papas no son vegetales;6
+Meat is not vegetable;Carne no es vegetal;6
+She is vegetarian;Ella es vegetariano;6
+I eat food;Yo como comida;6
+He is vegetarian, he doesn't eat meat;Él es vegetariano, él no come carne;6
+Pigs eat rice;Cerdos comen arroz;6
+Cats cook meat;Gatos cocinan carne;6
+Dogs eat rabbits;Perros comen conejos;6
+She eats sandwich;Ella come emparedado;6
+Do you eat soup?;¿Tú comes sopa?;6
+Do they eat strawberries?;¿Ellos comen fresas?;6
+Do we eat sugar?;¿Nosotros comemos azúcar?;6
+Do we drink tea?;¿Nosotros bebemos té?;6
+Do they drink wine?;¿Ellos beben vino?;6
+Ducks are birds;Patos son pájaros;6
+They cook fresh cheese;Ellos cocinan queso fresco;6
+I eat tomato;Yo como tomate;6
+She eats tomatoes;Ella come tomatoes;6
+Womens eat turtles;Mujeres comen tortugas;6
+They are vegetarian;Ellos son vegetariano;6
+We apologize;Disculpamos;6
+No, it is not him;No, no es él;6
+No, it is not you;No, no eres tú;6
+No, it is not them;No, no son ellos;6
+Your beer;Tu cerveza;7
+Your wine;Tu vino;7
+The man is yours;El hombre es tuyo;7
+The woman is yours;La mujer es tuya;7
+A boy is his;Un niño es suyo;7
+A girl is his;Una niña es suyo;7
+Her dress;Su vestido;8
+Her shirt;Su camisa;8
+Their coat;Su abrigo;8
+Their clothes;Su ropa;8
+Their oranges;Sus naranjas;8
+Your guys’s pants;Sus pantalónes;8
+Your guys’ animals;Sus animales;8
+My cat is a pig;Mí gato es un cerdo;7
+Our cats are pigs;Nuestro gatos son cerdos;7
+Their horses don’t eat rice;Sus caballos no comen arroz;7
+Your dogs don’t eat bread;Tus perros no comen pan;7
+His cats don’t eat roasted meat;Sus gatos no comen carne asada;7
+Your cats don’t eat mice;Tus gatos no comen ratónes;7
+My hats;Mís sombreros;8
+The hat is mine;El sombrero es mío;8
+The dresses are yours;Los vestidos son tuyos;8
+The crabs are hers;Los cangrejos son suyos;7
+The tomatoes are ours;Los tomatos son nuestros;7
+The apple is ours;La manzana es nuestra;7
+My dogs;Mis perros;7
+The cats are mine;Los gatos son míos;7
+The coats are mine;Los abrigos son míos;8
+Her skirt;Su falda;8
+His belt;Su cinturón;8
+The suit is ours;El traje es nuestro;8
+The dresses are ours;Los vestidos son nuestros;8
+Their sweaters;Sus suéteres;8
+Your boots;Tus botas;8
+My pants;Mis pantalones;8
+A hat is yours;Un sombrero es tuyo;8
+A shirt is yours;Una camisa es tuya;8
+The shoes are ours;Los zapatos son nuestros;8
+The socks are hers;Los calcetines son suyos;8
+The tie is mine;El corbato es mío;8
+Aren’t you going?;¿No vas?;10
+I don’t have dogs;Yo no tengo perros;10
+I read your letters;Yo leo tus cartas;8
+I have an animal, it is a mouse;Yo tengo un animal, es un ratón;10
+I don’t have the keys;Yo no tengo las llaves;10
+Our cats drink milk;Nuestras gatas beben leche;8
+Your horse eats salt;Tu caballo come sal;8
+The cat is not mine;La gata no es mía;8
+Her elephant drinks milk;Su elefante bebe leche;8
+The monkey is yours;El mono es suyo;8
+We eat our food;Nosotros comemos nuestra comida;8
