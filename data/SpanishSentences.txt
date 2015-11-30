@@ -167,14 +167,14 @@ A shirt is yours;Una camisa es tuya;8
 The shoes are ours;Los zapatos son nuestros;8
 The socks are hers;Los calcetines son suyos;8
 The tie is mine;El corbato es mío;8
-Aren’t you going?;¿No vas?;
-I don’t have dogs;Yo no tengo perros;
-I read your letters;Yo leo tus cartas;
-I have an animal, it is a mouse;Yo tengo un animal, es un ratón;
-I don’t have the keys;Yo no tengo las llaves;
-Our cats drink milk;Nuestras gatas beben leche;
-Your horse eats salt;Tu caballo come sal;
-The cat is not mine;La gata no es mía;
-Her elephant drinks milk;Su elefante bebe leche;
-The monkey is yours;El mono es suyo;
-We eat our food;Nosotros comemos nuestra comida;
+Aren’t you going?;¿No vas?;10
+I don’t have dogs;Yo no tengo perros;10
+I read your letters;Yo leo tus cartas;8
+I have an animal, it is a mouse;Yo tengo un animal, es un ratón;10
+I don’t have the keys;Yo no tengo las llaves;10
+Our cats drink milk;Nuestras gatas beben leche;8
+Your horse eats salt;Tu caballo come sal;8
+The cat is not mine;La gata no es mía;8
+Her elephant drinks milk;Su elefante bebe leche;8
+The monkey is yours;El mono es suyo;8
+We eat our food;Nosotros comemos nuestra comida;8
