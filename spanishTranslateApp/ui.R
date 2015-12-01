@@ -9,7 +9,9 @@ shinyUI(fluidPage(
                   min = 5, max = 30, value = 15, step = 1),
       actionButton("button", "Submit")),
     mainPanel(
-    textOutput("text")
+    textOutput("sectionsToTest"),
+    textOutput("sentencesAvailable"),
+    textOutput("sentencesWillTest")
     )
   )
 ))

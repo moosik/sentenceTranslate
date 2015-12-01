@@ -14,6 +14,8 @@ num <- sapply(temp, "[", 1)
 expl <- sapply(temp, "[", 2)
 keys.df <- data.frame(num, expl, stringsAsFactors = FALSE)
 
+source("helpers.R")
+
 shinyServer(function(input, output)({
   output$levelchoiceslider <- renderUI({
     sliderInput("sentences", "Choose from which levels the questions are presented", 
@@ -25,8 +27,19 @@ shinyServer(function(input, output)({
   res <- eventReactive(input$button, {
     paste("You will be asked to translate sentences from ", 
           paste(keys.df[1 : input$sentences, "expl"], collapse = ", "))})
-  output$text <- renderText({
+  output$sectionsToTest <- renderText({
     res()
   })
+  # select the sentences from the database for testing
+  observeEvent(input$button, {cat("sentences", input$numbersentences)})
+  data.section <- eventReactive(input$button, {data.df[data.df$level < input$numbersentences, ]})
+  tobe.tested <- eventReactive(input$button, {sentenceAvailabilityForTest(data.section, tests = input$numbersentences)})
+  output$sentencesAvailable <- renderText({
+    paste("This section has", nrow(data.section()), "sentences\n", sep = " ")
+  })
+  output$sentencesWillTest <- renderText({
+    paste("We will test", nrow(tobe.tested()), "sentences\n", sep = " ")
+  })
+
 
 }))
