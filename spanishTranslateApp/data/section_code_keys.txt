@@ -1,0 +1,11 @@
+0;Fluencia
+1;Basics 1
+2;Phrases
+3;Basics 2
+4;Food
+5;Animals
+6;Plurals
+7;Possession
+8;Clothing
+9;Questions
+10;Present 1

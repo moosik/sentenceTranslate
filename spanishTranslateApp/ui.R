@@ -6,8 +6,9 @@ shinyUI(fluidPage(
     sidebarPanel(
       uiOutput("levelchoiceslider"),
       sliderInput("numbersentences", "Choose number of sentences", 
-                  min = 5, max = 30, value = 15, step = 1),
-      submitButton(text = "Start Test")),
-    mainPanel()
+                  min = 5, max = 30, value = 15, step = 1)),
+    mainPanel(
+    textOutput("text")
+    )
   )
 ))
