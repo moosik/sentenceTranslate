@@ -18,28 +18,56 @@ source("helpers.R")
 
 shinyServer(function(input, output)({
   output$levelchoiceslider <- renderUI({
-    sliderInput("sentences", "Choose from which levels the questions are presented", 
+    sliderInput("levels", "Choose from which levels the questions are presented", 
                 min = min(data.df$level) + 1, 
                 max = max(data.df$level) + 1, 
                 value = min(data.df$level) + 2, 
                 step = 1)
   })
+  
   res <- eventReactive(input$button, {
     paste("You will be asked to translate sentences from ", 
-          paste(keys.df[1 : input$sentences, "expl"], collapse = ", "))})
+          paste(keys.df[1 : input$levels, "expl"], collapse = ", "))
+    })
+  
   output$sectionsToTest <- renderText({
     res()
   })
-  # select the sentences from the database for testing
-  observeEvent(input$button, {cat("sentences", input$numbersentences)})
-  data.section <- eventReactive(input$button, {data.df[data.df$level < input$numbersentences, ]})
-  tobe.tested <- eventReactive(input$button, {sentenceAvailabilityForTest(data.section, tests = input$numbersentences)})
+  
+  # Select the subset of the data accoring to the number of levels
+  # from which the questions will be selected
+  data.section <- eventReactive(input$button, {
+    data.df[data.df$level < input$levels, ]
+    })
+  
+  # Check whether there is enough senteces
+  tobe.tested <- eventReactive(input$button, {
+    sentenceAvailabilityForTest(data.section(), tests = input$numbersentences)
+    })
+  
+  # Print how many sentences total are there in the selected sections
   output$sentencesAvailable <- renderText({
     paste("This section has", nrow(data.section()), "sentences\n", sep = " ")
   })
+  
+  # Print how many sentences will be tested depending on the requested
+  # sentences and how many are available
   output$sentencesWillTest <- renderText({
     paste("We will test", nrow(tobe.tested()), "sentences\n", sep = " ")
   })
-
-
+  
+  # Start the test
+  spanish.sentence <- eventReactive(input$teststartbutton, {
+    paste("Sentence: ", tobe.tested()[1,1], sep = "")
+  })
+  output$spanish <- renderText({
+    spanish.sentence()
+  })
+  english.sentence <- eventReactive(input$submittranslation, {
+    paste("The correct translation: ", tobe.tested()[1,2], sep = "")
+  })
+  output$english <- renderText({
+    english.sentence()
+  })
+  
 }))

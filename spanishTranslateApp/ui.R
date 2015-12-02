@@ -11,7 +11,16 @@ shinyUI(fluidPage(
     mainPanel(
     textOutput("sectionsToTest"),
     textOutput("sentencesAvailable"),
-    textOutput("sentencesWillTest")
+    textOutput("sentencesWillTest"),
+    # Now add the butto to start the test
+    actionButton("teststartbutton", "Start Test!"),
+    textOutput("spanish"),
+    textInput("yourtranslation", label = "Enter your translation in the box below",
+              value = "your translation"),
+    actionButton("submittranslation", "Submit"),
+    textOutput("english"),
+    radioButtons("check", label = "Was your translation correct?", choices = c("Yes", "No"),
+                 selected = "No")
     )
   )
 ))
