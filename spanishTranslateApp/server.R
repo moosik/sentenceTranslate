@@ -56,7 +56,7 @@ shinyServer(function(input, output)({
     paste("We will test", nrow(tobe.tested()), "sentences\n", sep = " ")
   })
   
-  # Start the test
+  # Start the test based on the start the test button
   spanish.sentence <- eventReactive(input$teststartbutton, {
     paste("Sentence: ", tobe.tested()[1,1], sep = "")
   })
@@ -69,5 +69,6 @@ shinyServer(function(input, output)({
   output$english <- renderText({
     english.sentence()
   })
-  
+  # Continue the test based on the submit the results button
+
 }))
