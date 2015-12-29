@@ -13,7 +13,7 @@ shinyUI(fluidPage(
       textOutput("sentencesAvailable"),
       textOutput("sentencesWillTest"),
       # action button needs to show after the submit button
-      conditionalPanel("input.button",
+      conditionalPanel("input.submitparameters",
                        actionButton("teststartbutton", "Start Test")),
       # Conditional Panel for the test of the sentences
       conditionalPanel("input.teststartbutton",
@@ -21,7 +21,14 @@ shinyUI(fluidPage(
                        textInput("yourtranslation", 
                                  label = "Enter your translation in the box below",
                                  value = "your translation"),
-                       actionButton("submittranslation", "Check answer"))
+                       actionButton("submittranslation", "Check answer")),
+      conditionalPanel("input.submittranslation",
+                       textOutput("english"),
+                       radioButtons("correctness", "Is your translation correct?",
+                                    c("Yes" = "yes",
+                                      "No" = "no")),
+                       actionButton("next", "Next sentence"))
+      
       )
       # Next to figure out: how to set the conditional to 0 for the submittranslation
 #     textOutput("spanish"),
