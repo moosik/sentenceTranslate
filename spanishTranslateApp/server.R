@@ -25,7 +25,7 @@ shinyServer(function(input, output)({
                 step = 1)
   })
   
-  res <- eventReactive(input$button, {
+  res <- eventReactive(input$submitparameters, {
     paste("You will be asked to translate sentences from ", 
           paste(keys.df[1 : input$levels, "expl"], collapse = ", "))
     })
@@ -36,12 +36,12 @@ shinyServer(function(input, output)({
   
   # Select the subset of the data accoring to the number of levels
   # from which the questions will be selected
-  data.section <- eventReactive(input$button, {
+  data.section <- eventReactive(input$submitparameters, {
     data.df[data.df$level < input$levels, ]
     })
   
   # Check whether there is enough senteces
-  tobe.tested <- eventReactive(input$button, {
+  tobe.tested <- eventReactive(input$submitparameters, {
     sentenceAvailabilityForTest(data.section(), tests = input$numbersentences)
     })
   

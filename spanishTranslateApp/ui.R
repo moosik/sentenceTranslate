@@ -7,21 +7,21 @@ shinyUI(fluidPage(
       uiOutput("levelchoiceslider"),
       sliderInput("numbersentences", "Choose number of sentences", 
                   min = 5, max = 30, value = 15, step = 1),
-      actionButton("button", "Submit")),
+      actionButton("submitparameters", "Submit")),
     mainPanel(
       textOutput("sectionsToTest"),
       textOutput("sentencesAvailable"),
       textOutput("sentencesWillTest"),
       # action button needs to show after the submit button
       conditionalPanel("input.button",
-                       actionButton("teststartbutton", "Start Test!")),
+                       actionButton("teststartbutton", "Start Test")),
       # Conditional Panel for the test of the sentences
       conditionalPanel("input.teststartbutton",
                        textOutput("spanish"),
                        textInput("yourtranslation", 
                                  label = "Enter your translation in the box below",
                                  value = "your translation"),
-                       actionButton("submittranslation", "Submit"))
+                       actionButton("submittranslation", "Check answer"))
       )
       # Next to figure out: how to set the conditional to 0 for the submittranslation
 #     textOutput("spanish"),
