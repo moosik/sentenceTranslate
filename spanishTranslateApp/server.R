@@ -69,6 +69,12 @@ shinyServer(function(input, output)({
   output$english <- renderText({
     english.sentence()
   })
+  output$showtranslation <- reactive({
+    if(input$nextsentence == 0)
+      return(TRUE)
+    isolate({return(FALSE)})
+  })
+  outputOptions(output, 'showtranslation', suspendWhenHidden=FALSE)
   # Continue the test based on the submit the results button
 
 }))

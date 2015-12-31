@@ -22,21 +22,13 @@ shinyUI(fluidPage(
                                  label = "Enter your translation in the box below",
                                  value = "your translation"),
                        actionButton("submittranslation", "Check answer")),
-      conditionalPanel("input.submittranslation",
+      conditionalPanel("output.showtranslation",
                        textOutput("english"),
                        radioButtons("correctness", "Is your translation correct?",
                                     c("Yes" = "yes",
                                       "No" = "no")),
-                       actionButton("next", "Next sentence"))
+                       actionButton("nextsentence", "Next sentence"))
       
       )
-      # Next to figure out: how to set the conditional to 0 for the submittranslation
-#     textOutput("spanish"),
-#     textInput("yourtranslation", label = "Enter your translation in the box below",
-#               value = "your translation"),
-#     actionButton("submittranslation", "Submit"),
-#     textOutput("english"),
-#     radioButtons("check", label = "Was your translation correct?", choices = c("Yes", "No"),
-#                  selected = "No")
   )
 ))
