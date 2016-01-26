@@ -3,6 +3,7 @@ library(shiny)
 shinyUI(fluidPage(
   titlePanel("Test your Spanish Vocabulary from Duolingo"),
   sidebarLayout(
+    
     sidebarPanel(
       
       # Panel for the choices of sections from the database to be testes
@@ -14,13 +15,20 @@ shinyUI(fluidPage(
       
       # Button to submit the sections and the number of sentences
       actionButton("submitparameters", "Submit")),
+    
     mainPanel(
+      
+      # Output what sections, how many sentences available and how many
+      # sentences will be tested after the "submitparameters" was pressed
       textOutput("sectionsToTest"),
       textOutput("sentencesAvailable"),
       textOutput("sentencesWillTest"),
-      # action button needs to show after the submit button
+      # Button to start the test will be shown after the "submitparameters"
+      # button was pressed 
       conditionalPanel("input.submitparameters",
                        actionButton("teststartbutton", "Start Test")),
+      
+      
       # Conditional Panel for the test of the sentences
       conditionalPanel("input.teststartbutton",
                        textOutput("spanish"),

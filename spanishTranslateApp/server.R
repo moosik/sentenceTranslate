@@ -27,22 +27,25 @@ shinyServer(function(input, output)({
                 step = 1)
   })
   
+  # ---------------------------------------------------------
+  # Events depending on the "submitparameters" = "Submit" button
+  # Extract the sections to be tested
   res <- eventReactive(input$submitparameters, {
     paste("You will be asked to translate sentences from ", 
           paste(keys.df[1 : input$levels, "expl"], collapse = ", "))
     })
   
+  # Print the sections which will be tested
   output$sectionsToTest <- renderText({
     res()
   })
   
-  # Select the subset of the data accoring to the number of levels
-  # from which the questions will be selected
+  # Subset sentences according to the sections upon pressing the button "submitparameters"
   data.section <- eventReactive(input$submitparameters, {
     data.df[data.df$level < input$levels, ]
     })
   
-  # Check whether there is enough senteces
+  # Check whether there is enough sentences upon pressing the button "submitparameters"
   tobe.tested <- eventReactive(input$submitparameters, {
     sentenceAvailabilityForTest(data.section(), tests = input$numbersentences)
     })
@@ -52,12 +55,13 @@ shinyServer(function(input, output)({
     paste("This section has", nrow(data.section()), "sentences\n", sep = " ")
   })
   
-  # Print how many sentences will be tested depending on the requested
-  # sentences and how many are available
+  # Print how many sentences will be tested 
   output$sentencesWillTest <- renderText({
     paste("We will test", nrow(tobe.tested()), "sentences\n", sep = " ")
   })
   
+  # ---------------------------------------------------------
+  # Events depending on the "teststartbutton" = "Start Test" button
   # Start the test based on the start the test button
   spanish.sentence <- eventReactive(input$teststartbutton, {
     paste("Sentence: ", tobe.tested()[1,1], sep = "")
