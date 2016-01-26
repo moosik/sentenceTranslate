@@ -62,13 +62,17 @@ shinyServer(function(input, output)({
   
   # ---------------------------------------------------------
   # Events depending on the "teststartbutton" = "Start Test" button
-  # Start the test based on the start the test button
+  # Get the first sentence in Spanish
   spanish.sentence <- eventReactive(input$teststartbutton, {
     paste("Sentence: ", tobe.tested()[1,1], sep = "")
   })
+  
+  # Output the first sentence in Spanish
   output$spanish <- renderText({
     spanish.sentence()
   })
+  
+  
   english.sentence <- eventReactive(input$submittranslation, {
     paste("The correct translation: ", tobe.tested()[1,2], sep = "")
   })

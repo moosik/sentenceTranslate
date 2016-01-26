@@ -29,13 +29,16 @@ shinyUI(fluidPage(
                        actionButton("teststartbutton", "Start Test")),
       
       
-      # Conditional Panel for the test of the sentences
+      # Upon pressing teststartbutton display the Spanish sentence,
+      # text input box for the translation and the button submittranslation
       conditionalPanel("input.teststartbutton",
                        textOutput("spanish"),
                        textInput("yourtranslation", 
                                  label = "Enter your translation in the box below",
                                  value = "your translation"),
                        actionButton("submittranslation", "Check answer")),
+      
+      
       conditionalPanel("output.showtranslation",
                        textOutput("english"),
                        radioButtons("correctness", "Is your translation correct?",
