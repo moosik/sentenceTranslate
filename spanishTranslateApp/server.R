@@ -72,19 +72,24 @@ shinyServer(function(input, output)({
     spanish.sentence()
   })
   
-  
+  # ---------------------------------------------------------
+  # Events depending on the submittranslation = "Check answer" button
+  # Retrieve the English translation for the sentence
   english.sentence <- eventReactive(input$submittranslation, {
     paste("The correct translation: ", tobe.tested()[1,2], sep = "")
   })
+  
+  # Print the English translation for the sentence
   output$english <- renderText({
     english.sentence()
   })
-  output$showtranslation <- reactive({
-    if(input$nextsentence == 0)
-      return(TRUE)
-    isolate({return(FALSE)})
-  })
-  outputOptions(output, 'showtranslation', suspendWhenHidden=FALSE)
-  # Continue the test based on the submit the results button
+  
+#   output$showtranslation <- reactive({
+#     if(input$nextsentence == 0)
+#       return(TRUE)
+#     isolate({return(FALSE)})
+#   })
+#   outputOptions(output, 'showtranslation', suspendWhenHidden=FALSE)
+#   # Continue the test based on the submit the results button
 
 }))

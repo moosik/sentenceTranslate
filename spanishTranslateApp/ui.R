@@ -38,8 +38,9 @@ shinyUI(fluidPage(
                                  value = "your translation"),
                        actionButton("submittranslation", "Check answer")),
       
-      
-      conditionalPanel("output.showtranslation",
+      # Upon pressing the submittranslation button we display the English
+      # translation, the radio buttons for correctness
+      conditionalPanel("input.submittranslation",
                        textOutput("english"),
                        radioButtons("correctness", "Is your translation correct?",
                                     c("Yes" = "yes",
