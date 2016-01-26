@@ -4,9 +4,15 @@ shinyUI(fluidPage(
   titlePanel("Test your Spanish Vocabulary from Duolingo"),
   sidebarLayout(
     sidebarPanel(
-      uiOutput("levelchoiceslider"),
+      
+      # Panel for the choices of sections from the database to be testes
+      uiOutput("sectionslider"),
+      
+      # Panel for the number of sentences to be tested
       sliderInput("numbersentences", "Choose number of sentences", 
                   min = 5, max = 30, value = 15, step = 1),
+      
+      # Button to submit the sections and the number of sentences
       actionButton("submitparameters", "Submit")),
     mainPanel(
       textOutput("sectionsToTest"),

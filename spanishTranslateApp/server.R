@@ -17,8 +17,10 @@ keys.df <- data.frame(num, expl, stringsAsFactors = FALSE)
 source("helpers.R")
 
 shinyServer(function(input, output)({
-  output$levelchoiceslider <- renderUI({
-    sliderInput("levels", "Choose from which levels the questions are presented", 
+  
+  # Slider for the sections to be tested, sidebar panel
+  output$sectionslider <- renderUI({
+    sliderInput("levels", "Choose sections", 
                 min = min(data.df$level) + 1, 
                 max = max(data.df$level) + 1, 
                 value = min(data.df$level) + 2, 
