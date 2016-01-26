@@ -64,7 +64,7 @@ shinyServer(function(input, output)({
   # Events depending on the "teststartbutton" = "Start Test" button
   # Get the first sentence in Spanish
   spanish.sentence <- eventReactive(input$teststartbutton, {
-    paste("Sentence: ", tobe.tested()[1,1], sep = "")
+    paste("Sentence: ", tobe.tested()[1,"spanish"], sep = "")
   })
   
   # Output the first sentence in Spanish
@@ -76,13 +76,26 @@ shinyServer(function(input, output)({
   # Events depending on the submittranslation = "Check answer" button
   # Retrieve the English translation for the sentence
   english.sentence <- eventReactive(input$submittranslation, {
-    paste("The correct translation: ", tobe.tested()[1,2], sep = "")
+    paste("The correct translation: ", tobe.tested()[1,"english"], sep = "")
   })
   
   # Print the English translation for the sentence
   output$english <- renderText({
     english.sentence()
   })
+  
+  # --------------------------------------------------------
+  # Event depending on the nextsentence = "Next sentence" button
+  # Getting the next spanish sentence
+  spanish.sentence <- eventReactive(input$nextsentence, {
+    paste("Sentence: ", tobe.tested()[2,"spanish"], sep = "")
+  })
+  
+  # Output the first sentence in Spanish
+  output$spanish <- renderText({
+    spanish.sentence()
+  })
+  
   
 #   output$showtranslation <- reactive({
 #     if(input$nextsentence == 0)
