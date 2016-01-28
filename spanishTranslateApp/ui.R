@@ -38,28 +38,7 @@ shinyUI(fluidPage(
                        textInput("yourtranslation", 
                                  label = "Enter your translation in the box below",
                                  value = "your translation"),
-                       actionButton("submittranslation", "Check answer")),
-      
-      # Upon pressing the submittranslation button we display the English
-      # translation, the radio buttons for correctness
-      conditionalPanel("input.submittranslation",
-                       textOutput("english"),
-                       radioButtons("correctness", "Is your translation correct?",
-                                    c("Yes" = "yes",
-                                      "No" = "no")),
-                       actionButton("nextsentence", "Next sentence"))
-      
-      
-#       # For some strange reason adding this block breaks everything!
-#       # Even though things seem to work on the server side
-#       # Upon pressing nextsentence display the next spanish sentence,
-#       # text input box for the translation and the button submittranslation
-#       conditionalPanel("input.nextsentence",
-#                        textOutput("spanish"),
-#                        textInput("yourtranslation", 
-#                                  label = "Enter your translation in the box below",
-#                                  value = "your translation"),
-#                        actionButton("submittranslation", "Check answer"))
+                       actionButton("submittranslation", "Check answer"))
       
       )
   )
