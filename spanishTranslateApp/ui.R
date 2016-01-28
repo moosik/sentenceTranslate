@@ -24,22 +24,7 @@ shinyUI(fluidPage(
       # sentences will be tested after the "submitparameters" was pressed
       textOutput("sectionsToTest"),
       textOutput("sentencesAvailable"),
-      textOutput("sentencesWillTest"),
-      # Button to start the test will be shown after the "submitparameters"
-      # button was pressed 
-      conditionalPanel("input.submitparameters",
-                       actionButton("teststartbutton", "Start Test")),
-      
-      
-      # Upon pressing teststartbutton display the Spanish sentence,
-      # text input box for the translation and the button submittranslation
-      conditionalPanel("input.teststartbutton",
-                       textOutput("spanish"),
-                       textInput("yourtranslation", 
-                                 label = "Enter your translation in the box below",
-                                 value = "your translation"),
-                       actionButton("submittranslation", "Check answer"))
-      
+      textOutput("sentencesWillTest")
       )
   )
 ))
