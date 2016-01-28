@@ -24,7 +24,11 @@ shinyUI(fluidPage(
       # sentences will be tested after the "submitparameters" was pressed
       textOutput("sectionsToTest"),
       textOutput("sentencesAvailable"),
-      textOutput("sentencesWillTest")
+      textOutput("sentencesWillTest"),
+      # Add section the presents Spanish question: button Spanish and the
+      # output with the Spanish sentence
+      conditionalPanel("input.submitparameters",
+                       actionButton("spanish", "Spanish"))
       )
   )
 ))
