@@ -61,5 +61,16 @@ shinyServer(function(input, output)({
   })
   
   # ---------------------------------------------------------
+  # Create reactive values expression to advance through tobe.tested object
+  spanishCounter <- reactiveValues(i = 0)
+  
+  # Observe the button "spanish"
+  observe({input$spanish
+    isolate({spanishCounter$i <- spanishCounter$i + 1})
+    })
+  output$spanishS <- renderText({
+    
+    paste(tobe.tested()[spanishCounter$i, 2])
+  })
 
 }))

@@ -28,7 +28,13 @@ shinyUI(fluidPage(
       # Add section the presents Spanish question: button Spanish and the
       # output with the Spanish sentence
       conditionalPanel("input.submitparameters",
-                       actionButton("spanish", "Spanish"))
+                       actionButton("spanish", "Spanish")),
+      
+      conditionalPanel("input.spanish",
+                       textOutput("spanishS"))
+      
       )
+    
+    
   )
 ))
