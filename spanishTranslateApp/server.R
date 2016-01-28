@@ -66,11 +66,25 @@ shinyServer(function(input, output)({
   
   # Observe the button "spanish"
   observe({input$spanish
-    isolate({spanishCounter$i <- spanishCounter$i + 1})
+    isolate({ spanishCounter$i <- spanishCounter$i + 1 })
     })
   output$spanishS <- renderText({
-    
     paste(tobe.tested()[spanishCounter$i, 2])
+  })
+  # Create another reactive values output
+  englishShow <- reactiveValues(data = NULL)
+  
+  observe({input$spanish
+    isolate({englishShow$data <- NULL})
+  })
+  
+  observe({ input$english
+    isolate({ englishShow$data <- tobe.tested()[spanishCounter$i, 1] })
+    })
+  
+  output$englishS <- renderText({
+    if (is.null(englishShow$data)) return()
+    paste(tobe.tested()[spanishCounter$i, 1])
   })
 
 }))

@@ -31,7 +31,13 @@ shinyUI(fluidPage(
                        actionButton("spanish", "Spanish")),
       
       conditionalPanel("input.spanish",
-                       textOutput("spanishS"))
+                       textOutput("spanishS")),
+      # Add conditional panel for the English translation
+      conditionalPanel("input.submitparameters",
+                       actionButton("english", "English")),
+      
+      conditionalPanel("input.english",
+                       textOutput("englishS"))
       
       )
     
