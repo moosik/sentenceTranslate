@@ -66,7 +66,7 @@ shinyServer(function(input, output)({
   
   # Observe the button "spanish"
   observe({input$spanish
-    isolate({ spanishCounter$i <- spanishCounter$i + 1 })
+    isolate({spanishCounter$i <- spanishCounter$i + 1 })
     })
   output$spanishS <- renderText({
     paste(tobe.tested()[spanishCounter$i, 2])
@@ -84,7 +84,8 @@ shinyServer(function(input, output)({
   
   output$englishS <- renderText({
     if (is.null(englishShow$data)) return()
-    paste(tobe.tested()[spanishCounter$i, 1])
+    englishShow$data # this one and below work
+    #paste(tobe.tested()[spanishCounter$i, 1])
   })
 
 }))
