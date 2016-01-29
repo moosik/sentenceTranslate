@@ -67,7 +67,7 @@ shinyServer(function(input, output)({
   # Observe the button "spanish"
   observe({input$spanish
     isolate({
-      if(spanishCounter$i <= nrow(tobe.tested())){
+      if(spanishCounter$i < nrow(tobe.tested())){
         spanishCounter$i <- spanishCounter$i + 1
       }
       else{
