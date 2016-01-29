@@ -96,6 +96,10 @@ shinyServer(function(input, output)({
     #paste(tobe.tested()[spanishCounter$i, 1])
   })
   
+  # Writing an observer to keep track of the answers
+  answerCounter <- reactiveValues(i = 0)
+  observeEvent()
+  
   output$endtest <- renderText({
     if(is.null(spanishCounter$i)){
       return("you are done")

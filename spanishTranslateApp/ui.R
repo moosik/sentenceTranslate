@@ -38,6 +38,11 @@ shinyUI(fluidPage(
       
       conditionalPanel("input.english",
                        textOutput("englishS")),
+      # create a conditional panel based on english button
+      conditionalPanel("input.english",
+                       radioButtons("correct", label = "Is your translation correct?",
+                                    choices = c("Yes" = "yes", "No" = "no"), 
+                                    inline = TRUE)),
       textOutput("endtest")
       
       )
