@@ -37,7 +37,8 @@ shinyUI(fluidPage(
                        actionButton("english", "English")),
       
       conditionalPanel("input.english",
-                       textOutput("englishS"))
+                       textOutput("englishS")),
+      textOutput("endtest")
       
       )
     
