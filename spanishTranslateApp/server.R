@@ -42,6 +42,7 @@ shinyServer(function(input, output)({
   
   # Subset sentences according to the sections upon pressing the button "submitparameters"
   data.section <- eventReactive(input$submitparameters, {
+    # all of a sudden I am not sure why this works
     data.df[data.df$level < input$levels, ]
     })
   
