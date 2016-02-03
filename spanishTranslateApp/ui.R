@@ -1,7 +1,12 @@
 library(shiny)
 
 shinyUI(fluidPage(
-  titlePanel("Test your Spanish Vocabulary from Duolingo"),
+  h1("Test your Spanish Vocabulary from Duolingo", align = "center"),
+  fluidRow(column(8, offset = 2,
+                  p("This application tests your ability to translate
+                           sentences from Spanish to English. The sentences
+                           are based on the vocabulary learned in Duolingo 
+                           Spanish. Choose the lessons from which the sentences should be selected and the number of sentences you want to translate."))),
   fluidRow(
       column(3, offset = 2, 
              # Panel for the choices of sections from the database to be testes

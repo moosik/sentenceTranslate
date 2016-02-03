@@ -32,7 +32,7 @@ shinyServer(function(input, output)({
   # Extract the sections to be tested
   res <- eventReactive(input$submitparameters, {
     paste("You will be asked to translate sentences from ", 
-          paste(keys.df[1 : input$levels, "expl"], collapse = ", "))
+          paste(keys.df[1 : input$levels, "expl"], collapse = ", "), ".", sep = "")
     })
   
   # Print the sections which will be tested
@@ -53,12 +53,12 @@ shinyServer(function(input, output)({
   
   # Print how many sentences total are there in the selected sections
   output$sentencesAvailable <- renderText({
-    paste("This section has", nrow(data.section()), "sentences\n", sep = " ")
+    paste("This section has ", nrow(data.section()), " sentences.", sep = "")
   })
   
   # Print how many sentences will be tested 
   output$sentencesWillTest <- renderText({
-    paste("We will test", nrow(tobe.tested()), "sentences\n", sep = " ")
+    paste("We will ask you to translate ", nrow(tobe.tested()), " sentences.", sep = "")
   })
   
   # ---------------------------------------------------------
