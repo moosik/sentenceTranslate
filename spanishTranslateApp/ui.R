@@ -25,7 +25,7 @@ shinyUI(fluidPage(
       ),
   br(),
   fluidRow(
-    column(6, offset = 2, 
+    column(8, offset = 2, 
            textOutput("sectionsToTest"),
            textOutput("sentencesAvailable"),
            textOutput("sentencesWillTest")
