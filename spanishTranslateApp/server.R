@@ -104,12 +104,12 @@ shinyServer(function(input, output)({
   
   output$endtest <- renderText({
     if(is.null(spanishCounter$i)){
-      return("you are done")
+      return("You are done!")
     }
   })
   output$testresult <- renderText({
     if(answerCounter$i != 0){
-    paste("you score is", answerCounter$i, sep = " ")
+    paste("Your score is", answerCounter$i, sep = " ")
     }
   })
 
