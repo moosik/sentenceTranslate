@@ -57,8 +57,9 @@ shinyUI(fluidPage(
                br(),
                textOutput("endtest"),
                br(),
-               conditionalPanel("input.english",
-                                textOutput("testresult")))
+              conditionalPanel("input.english",
+                                textOutput("testresult"))
+               )
       ),
     title = "Duolingo Spanish")
 )

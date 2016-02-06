@@ -65,7 +65,9 @@ shinyServer(function(input, output)({
   # Create reactive values expression to advance through tobe.tested object
   spanishCounter <- reactiveValues(i = 0)
   
-  # Observe the button "spanish"
+  # Observe the button "spanish": if the counter is less the number of
+  # rows in the tobe tested object then continue increasing the counter
+  # otherwise set it to NULL
   observe({input$spanish
     isolate({
       if(spanishCounter$i < nrow(tobe.tested())){
@@ -76,20 +78,28 @@ shinyServer(function(input, output)({
       }
       })
     })
+  
+  # Produce the sentence for translation
   output$spanishS <- renderText({
     paste(tobe.tested()[spanishCounter$i, 2])
   })
+  
   # Create another reactive values output
   englishShow <- reactiveValues(data = NULL)
   
+  # Upon pressing the button Spanish English panel with a translation
+  # reactive values in englishShow should be set to NULL
   observe({input$spanish
     isolate({englishShow$data <- NULL})
   })
   
+  # Upon pressing the English button we should get the English
+  # translation
   observe({ input$english
     isolate({ englishShow$data <- tobe.tested()[spanishCounter$i, 1] })
     })
   
+  # Produce English output
   output$englishS <- renderText({
     if (is.null(englishShow$data)) return()
     englishShow$data # this one and below work
@@ -98,19 +108,26 @@ shinyServer(function(input, output)({
   
   # Writing an observer to keep track of the answers
   answerCounter <- reactiveValues(i = 0)
+  
+  # If we hit yes, then the counter of correct answers will increse
   observeEvent(input$yes,{
     isolate(answerCounter$i <- answerCounter$i + 1)
   })
   
+  # If we hit no then the counter of correct answers will stay the same
+  observeEvent(input$no,{
+    isolate(answerCounter$i <- answerCounter$i)
+  })
+  
+  # The test will end when the counter for sentences turns to NULL
   output$endtest <- renderText({
     if(is.null(spanishCounter$i)){
       return("You are done!")
     }
   })
+  # Provide the score
   output$testresult <- renderText({
-    if(answerCounter$i != 0){
-    paste("Your score is", answerCounter$i, sep = " ")
-    }
+    paste("Your current score is", answerCounter$i, sep = " ")
   })
 
 }))
