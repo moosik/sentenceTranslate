@@ -1,4 +1,5 @@
 library(shiny)
+library(shinythemes)
 
 shinyUI(fluidPage(
   h1("Test your Spanish Vocabulary from Duolingo", align = "center"),
@@ -61,5 +62,6 @@ shinyUI(fluidPage(
                                 textOutput("testresult"))
                )
       ),
-    title = "Duolingo Spanish")
+    title = "Duolingo Spanish",
+  theme = shinytheme("flatly"))
 )
