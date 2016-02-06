@@ -68,16 +68,29 @@ shinyServer(function(input, output)({
   # Observe the button "spanish": if the counter is less the number of
   # rows in the tobe tested object then continue increasing the counter
   # otherwise set it to NULL
-  observe({input$spanish
-    isolate({
-      if(spanishCounter$i < nrow(tobe.tested())){
-        spanishCounter$i <- spanishCounter$i + 1
-      }
-      else{
-        spanishCounter$i <- NULL
-      }
-      })
-    })
+#   observe({input$spanish
+#     isolate({
+#       if(spanishCounter$i < nrow(tobe.tested())){
+#         spanishCounter$i <- spanishCounter$i + 1
+#       }
+#       else{
+#         spanishCounter$i <- NULL
+#       }
+#       })
+#     })
+  observeEvent(input$spanish,
+               # We observe the button Spanish but don't take dependency
+               # on it
+               {
+                 isolate({
+                   if(spanishCounter$i < nrow(tobe.tested())){
+                     spanishCounter$i <- spanishCounter$i + 1
+                   }
+                   else{
+                     spanishCounter$i <- NULL
+                   }
+                 }) 
+               })
   
   # Produce the sentence for translation
   output$spanishS <- renderText({
