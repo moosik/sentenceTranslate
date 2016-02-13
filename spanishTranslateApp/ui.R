@@ -56,8 +56,7 @@ shinyUI(fluidPage(
                                 actionButton("no", "No")
                ),
                br(),
-               textOutput("endtest"),
-               br(),
+               em(textOutput("endtest")),
               conditionalPanel("input.english",
                                 textOutput("testresult"))
                )

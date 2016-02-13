@@ -68,28 +68,14 @@ shinyServer(function(input, output)({
   # Observe the button "spanish": if the counter is less the number of
   # rows in the tobe tested object then continue increasing the counter
   # otherwise set it to NULL
-#   observe({input$spanish
-#     isolate({
-#       if(spanishCounter$i < nrow(tobe.tested())){
-#         spanishCounter$i <- spanishCounter$i + 1
-#       }
-#       else{
-#         spanishCounter$i <- NULL
-#       }
-#       })
-#     })
   observeEvent(input$spanish,
-               # We observe the button Spanish but don't take dependency
-               # on it
                {
-                 isolate({
-                   if(spanishCounter$i < nrow(tobe.tested())){
-                     spanishCounter$i <- spanishCounter$i + 1
-                   }
-                   else{
-                     spanishCounter$i <- NULL
-                   }
-                 }) 
+                 if(spanishCounter$i < nrow(tobe.tested())){
+                   spanishCounter$i <- spanishCounter$i + 1
+                 }
+                 else{
+                   spanishCounter$i <- NULL
+                 }
                })
   
   # Produce the sentence for translation
@@ -102,14 +88,14 @@ shinyServer(function(input, output)({
   
   # Upon pressing the button Spanish English panel with a translation
   # reactive values in englishShow should be set to NULL
-  observe({input$spanish
-    isolate({englishShow$data <- NULL})
+  observeEvent(input$spanish, {
+     englishShow$data <- NULL
   })
   
   # Upon pressing the English button we should get the English
   # translation
-  observe({ input$english
-    isolate({ englishShow$data <- tobe.tested()[spanishCounter$i, 1] })
+  observeEvent(input$english,{
+    englishShow$data <- tobe.tested()[spanishCounter$i, 1]
     })
   
   # Produce English output
@@ -124,12 +110,12 @@ shinyServer(function(input, output)({
   
   # If we hit yes, then the counter of correct answers will increse
   observeEvent(input$yes,{
-    isolate(answerCounter$i <- answerCounter$i + 1)
+    answerCounter$i <- answerCounter$i + 1
   })
   
   # If we hit no then the counter of correct answers will stay the same
   observeEvent(input$no,{
-    isolate(answerCounter$i <- answerCounter$i)
+    answerCounter$i <- answerCounter$i
   })
   
   # The test will end when the counter for sentences turns to NULL
