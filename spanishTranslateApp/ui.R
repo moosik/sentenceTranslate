@@ -34,33 +34,44 @@ shinyUI(fluidPage(
       ),
   br(),
   fluidRow(
-        column(4, offset = 2,
+        column(3, offset = 2, 
+               br(),
                conditionalPanel("input.submitparameters",
                                 actionButton("spanish", "Spanish")),
                br(),
                conditionalPanel("input.spanish",
                                 textOutput("spanishS"))),
-        column(4,
+        column(3,
+               br(),
                conditionalPanel("input.submitparameters",
                                 actionButton("english", "English")),
                br(),
                conditionalPanel("input.english",
-                                textOutput("englishS")))
-      ),
-  br(),
-  fluidRow(
-        column(4, offset = 6,
+                                textOutput("englishS"))),
+        column(2,
                conditionalPanel("input.english",
                                 helpText("Was your translation correct?"),
                                 actionButton("yes", "Yes"),
                                 actionButton("no", "No")
                ),
-               br(),
                em(textOutput("endtest")),
-              conditionalPanel("input.english",
-                                textOutput("testresult"))
-               )
+               conditionalPanel("input.english",
+                                textOutput("testresult")))
       ),
+#   br(),
+#   fluidRow(
+#         column(4, offset = 6,
+#                conditionalPanel("input.english",
+#                                 helpText("Was your translation correct?"),
+#                                 actionButton("yes", "Yes"),
+#                                 actionButton("no", "No")
+#                ),
+#                br(),
+#                em(textOutput("endtest")),
+#               conditionalPanel("input.english",
+#                                 textOutput("testresult"))
+#                )
+#       ),
     title = "Duolingo Spanish",
   theme = shinytheme("flatly"))
 )
